@@ -6,9 +6,9 @@ const host = "http://localhost:5000";
 export class LedServiceService {
   constructor(private http: Http) {}
 
-  async strobeLed(): Promise<Object> {
+  async strobeLed(endpoint): Promise<Object> {
     try {
-      let res = await this.http.get(host).toPromise();
+      let res = await this.http.get(host + endpoint).toPromise();
       return res;
     } catch (error) {
       await this.handleError(error);
