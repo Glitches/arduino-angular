@@ -1,4 +1,4 @@
 <div class="fader">
-  <input class="inp" />
-  <button>Fade!</button>
+  <input #searchInput id="fadefield" name="fadefield" type="text" placeholder="Fade Time" />
+  <button (click)="getFade($event)">Fade!</button>
 </div>
