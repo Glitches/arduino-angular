@@ -24,6 +24,10 @@ import { FadeInputComponent } from "./fade-input/fade-input.component";
       {
         path: "",
         component: LedCommanderComponent
+      },
+      {
+        path: "fade",
+        component: FadeInputComponent
       }
     ])
   ],
